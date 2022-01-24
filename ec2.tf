@@ -6,7 +6,7 @@ resource "aws_instance" "instance-1" {
         instance_type="t2.micro"
 	key_name="Jenkins"
 	provisioner "file" {
-	 source="index.html"
+	 source="apache.yml"
 	        destination="https://github.com/keerthy-sith/ec2-modules/blob/master/apache.yml"
 } 
 connection {
