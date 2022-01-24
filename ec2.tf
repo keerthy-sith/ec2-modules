@@ -7,7 +7,7 @@ resource "aws_instance" "instance-1" {
 	key_name="Jenkins"
 	provisioner "file" {
 	 source="index.html"
-	        destination="https://github.com/keerthy-sith/ec2-modules/blob/master/index.html"
+	        destination="https://github.com/keerthy-sith/ec2-modules/blob/master/apache.yml"
 } 
 connection {
         type="ssh"
